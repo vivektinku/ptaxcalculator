@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Tax Calculator by NEGPA</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Professional Tax Calculator by NEGPA</h1>
+    <form>
+        <label for="category">Select Category:</label>
+        <select id="category" onchange="updateIncomeSlab()">
+            <!-- Categories will be dynamically populated -->
+        </select>
+        <br><br>
+        <label for="incomeSlab">Select Income Slab:</label>
+        <select id="incomeSlab">
+            <option value="">--Select Income Slab--</option>
+        </select>
+        <br><br>
+        <button type="button" onclick="calculateTax()">Calculate Tax</button>
+    </form>
+    <h2 id="result"></h2>
+</body>
+</html>
